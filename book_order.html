@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<title>Insert title here</title>
+</head>
+  <body> 
+  
+  
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		 
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html" style="color: #ffffff;"><img src="images//home.png" height="40px" class="d-inline-block align-text-center">Home</a>
+			  </li>
+			
+			 <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="kfc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;"><img src="images//menu.png" height="40px" class="d-inline-block align-text-center">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="book_order.html" style="background-color:aqua;">Burger</a></li>
+			<li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="book_order.html" style="background-color:aqua;">Pizza</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="book_order.html" style="background-color:aqua;">Sandwitch</a></li>
+          </ul>
+        </li>
+		 	 	 
+			 
+			  <li class="nav-item">
+				<a class="nav-link" href="order_choice.html" style="color: #ffffff;"><img src="images//foodorder.jpg" height="40px" class="d-inline-block align-text-center">Order</a>
+			  </li>
+			 
+			 
+			  <li class="nav-item">
+				<a class="nav-link" href="#" style="color: #ffffff;"><img src="images//deals.png" height="40px" class="d-inline-block align-text-center" >Deals</a>
+			  </li>
+			  
+			</ul>
+			<button type="button" class="btn btn-dark border border-white rounded px-5" style="font-size: 18px;" data-toggle="modal" data-target="#map">Our Location</button>
+			<i class="fa fa-search" style="font-size:40px; padding-left: 50px; color: #999999;"></i>
+			<i class="fa fa-shopping-cart" style="font-size:40px; padding-left: 30px; padding-right: 100px; color: #999999;"></i>
+				 
+		 </div>
+		</nav>
+  
+  
+  <center>
+ 
+<form class="row g-3" style="width:700px" action="Book_order" method="post">
+<fieldset class="border p-1">
+<legend>Order Form</legend>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Enter Name</label>
+    <input type="text" class="form-control" id="name" name="name">
+  </div>
+ 
+  <div class="col-7">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="address" placeholder="1234 Main St" name="address">
+  </div>
+  
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Contact No.</label>
+    <input type="text" class="form-control" id="contact" name="contact" maxlength="10" required/>
+  </div>
+   <div class="col-md-4">
+    <label for="inputState" class="form-label">Enter Item name</label>
+    <select id="itemname"  name="itemname" class="form-select">
+      <option selected>Choose...</option>
+      <option>Pizza</option>
+      <option>Burger</option>
+      <option>Sandwitch</option>
+      <option>Pizza Combo</option>
+      <option>Burger family fest</option>
+    </select>
+  </div>
+   
+  
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Enter Quantity</label>
+    <select id="quantity" name="quantity" class="form-select">
+      <option selected>Choose...</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+ 
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        I am Agree with terms and condition
+      </label>
+    </div>
+  </div>
+  <br>
+  <div class="col-12">
+    <button type="submit" name="submit" class="btn btn-primary">Book Order</button>
+  </div>
+  </fieldset>
+</form>
+</center>
+</body>
+</html>

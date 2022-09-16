@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>KFC</title>
+		<link rel="stylesheet" href="style.css">
+		<!-- Favicons -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Insert title here</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		 
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html" style="color: #ffffff;"><img src="images//home.png" height="40px" class="d-inline-block align-text-center">Home</a>
+			  </li>
+			
+			 <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="kfc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;"><img src="images//menu.png" height="40px" class="d-inline-block align-text-center">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="book_order.html" style="background-color:aqua;">Burger</a></li>
+			<li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="book_order.html" style="background-color:aqua;">Pizza</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="book_order.html" style="background-color:aqua;">Sandwitch</a></li>
+          </ul>
+        </li>
+		 	 	 
+			 
+			  <li class="nav-item">
+				<a class="nav-link" href="order_choice.html" style="color: #ffffff;"><img src="images//foodorder.jpg" height="40px" class="d-inline-block align-text-center">Order</a>
+			  </li>
+			 
+			 
+			  <li class="nav-item">
+				<a class="nav-link" href="#" style="color: #ffffff;"><img src="images//deals.png" height="40px" class="d-inline-block align-text-center" >Deals</a>
+			  </li>
+			  
+			</ul>
+			<button type="button" class="btn btn-dark border border-white rounded px-5" style="font-size: 18px;" data-toggle="modal" data-target="#map">Our Location</button>
+			<i class="fa fa-search" style="font-size:40px; padding-left: 50px; color: #999999;"></i>
+			<i class="fa fa-shopping-cart" style="font-size:40px; padding-left: 30px; padding-right: 100px; color: #999999;"></i>
+				 
+		 </div>
+		</nav>
+
+
+
+<br><br>
+<center>
+<h3>Cancel Order</h3>
+<br><br><br>
+<form action="DeleteDataProject" method="post">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Enter Order id</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="id" name="id" placeholder="Order id">
+    </div>
+  </div>
+  <br><br>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Cancel Order</button>
+    </div>
+  </div>
+ 
+ 
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>KFC</title>
+		<link rel="stylesheet" href="style.css">
+		<!-- Favicons -->
+		<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+		
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Insert title here</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		 
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html" style="color: #ffffff;"><img src="images//home.png" height="40px" class="d-inline-block align-text-center">Home</a>
+			  </li>
+			
+			 <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="kfc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;"><img src="images//menu.png" height="40px" class="d-inline-block align-text-center">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="book_order.html" style="background-color:aqua;">Burger</a></li>
+			<li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="book_order.html" style="background-color:aqua;">Pizza</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="book_order.html" style="background-color:aqua;">Sandwitch</a></li>
+          </ul>
+        </li>
+		 	 	 
+			 
+			  <li class="nav-item">
+				<a class="nav-link" href="order_choice.html" style="color: #ffffff;"><img src="images//foodorder.jpg" height="40px" class="d-inline-block align-text-center">Order</a>
+			  </li>
+			 
+			 
+			  <li class="nav-item">
+				<a class="nav-link" href="#" style="color: #ffffff;"><img src="images//deals.png" height="40px" class="d-inline-block align-text-center" >Deals</a>
+			  </li>
+			  
+			</ul>
+			<button type="button" class="btn btn-dark border border-white rounded px-5" style="font-size: 18px;" data-toggle="modal" data-target="#map">Our Location</button>
+			<i class="fa fa-search" style="font-size:40px; padding-left: 50px; color: #999999;"></i>
+			<i class="fa fa-shopping-cart" style="font-size:40px; padding-left: 30px; padding-right: 100px; color: #999999;"></i>
+				 
+		 </div>
+		</nav>
+  
+
+<br><br><br>
+
+				
+			<div>
+				<h4 class="modal-title" id="myModalLabel">Registration Form</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			 
+			 <br>
+			 
+         <!--data-email="webdevck121.1@gmail.com" action="https://script.google.com/macros/s/AKfycbznYuiX-MhsvqIxWXobp_tgrLByf6adiJSqizrWvtY34xL4sTV5ZutI88Wf9L5dwf7PqA/exec" class="row g-3 needs-validation pure-form pure-form-stacked" novalidate method="POST"-->
+			 
+			  <form class="row g-3"  style="width:800px" name="hello-sheet" action="Registerservlet" method="post">
+				  <div class="col-md-4">
+					<label for="validationCustom01" class="form-label">Your name</label>
+					<input type="text" class="form-control" id="name" placeholder="Mark" required name="name">
+					<div class="valid-feedback">
+					  Looks good!
+					</div>
+				  </div>
+				  <div class="col-md-3">
+					<label for="validationCustom05" class="form-label">password</label>
+					<input type="text" class="form-control" id="password" required   name="password">
+					<div class="invalid-feedback" >
+					  Please provide a valid password 
+					</div>
+				  </div>
+				  
+			  <div class="row">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" required/>
+    	
+  </div>
+				  <div class="col-md-6">
+					<label for="validationCustom03" class="form-label">Address</label>
+					<input type="text" class="form-control" id="address" required minlength="20" name="address">
+					<div class="invalid-feedback">
+					   Address should be atleast 20 characters
+					</div>
+				  </div>
+				 
+				  <div class="col-md-3">
+					<label for="validationCustom05" class="form-label">Contact No.</label>
+					<input type="text" class="form-control" id="contact" required pattern="[0-9]{10}" maxlength="10" name="contact">
+					<div class="invalid-feedback" >
+					  Please provide a valid Contact no.
+					</div>
+				  </div>
+				  <div class="col-12">
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+					  <label class="form-check-label" for="invalidCheck">
+						Agree to terms and conditions
+					  </label>
+					  <div class="invalid-feedback">
+						You must agree before submitting.
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-12">
+					<button id="btnp" class="btn btn-primary" type="submit" name="submit">Sign UP</button>
+				  </div>
+				</form>
+				
+			  
+			
+		  
+			
+
+</body>
+</html>
